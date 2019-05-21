@@ -1,2 +1,8 @@
 chrome:
   webdriver.type: chrome
+  webdriver.cap.browserName: chrome
+  webdriver.url: http://34.250.68.149:4444/wd/hub
+  webdriver.defaultTimeout: 10
+  webdriver.mobile: false
+  webdriver.maximize: false
+  webdriver.reusable: false
