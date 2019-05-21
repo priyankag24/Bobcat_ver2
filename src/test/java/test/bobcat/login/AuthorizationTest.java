@@ -37,7 +37,7 @@ public class AuthorizationTest {
 	@Description("Login to author instance and open test page")
 	public void loginTest() throws ActionException {
 		TestPage testpage = bobcatPageFactory.create("/content/we-retail/us/en.html", TestPage.class);
-		controller.execute(AemActions.LOG_IN);
+
 		assertTrue(testpage.open().isDisplayed());
 	}
 
