@@ -1,5 +1,4 @@
 dev:
-  author.url: http://34.250.207.77:5000/aem/start.html 
   author.ip: 34.250.207.77:5000
   author.login: admin
   author.password: admin
