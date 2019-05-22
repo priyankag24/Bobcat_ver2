@@ -13,7 +13,7 @@ public class TestPage extends AemAuthorPage<TestPage> {
   @Inject
   private BobcatWait bobcatWait;
 
-  private String title = "English";
+  private String title = "AEM Start";
 
   public String getTitle() {
     return title;
