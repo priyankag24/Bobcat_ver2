@@ -1,11 +1,6 @@
 dev:
   author.url: https://dev-author.projectname.com
-  author.ip: http://34.250.68.149:4502
+  author.ip: http://localhost:4502
   author.login: admin
   author.password: admin
   login.token.name: login-token
-
-  publish.url: https://dev.projectname.com
-  publish.ip: http://34.250.68.149:4503
-  publish.login: admin
-  publish.password: admin
