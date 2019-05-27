@@ -46,7 +46,7 @@ public String getTitle() {
   }
 
 public String getFullUrl(String url) {
-	
+	System.out.println("Lab Offering");
 	    return url;
 	  }
 	
