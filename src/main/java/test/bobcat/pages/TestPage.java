@@ -27,10 +27,9 @@ public class TestPage extends AemAuthorPage<TestPage> {
 public void setUrl(String url) {
 	this.url = url;
 }
-@Inject
-@Named("name")
 
 public String getTitle() {
+    System.out.println("Test Page Entry");	
     return title;
   }
 
