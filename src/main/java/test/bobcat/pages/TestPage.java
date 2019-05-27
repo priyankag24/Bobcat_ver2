@@ -8,6 +8,7 @@ import com.cognifide.qa.bb.aem.core.pages.AemAuthorPage;
 import com.cognifide.qa.bb.qualifier.PageObject;
 import com.cognifide.qa.bb.wait.BobcatWait;
 import com.google.inject.Inject;
+import com.google.inject.name.Named;
 
 
 
@@ -26,7 +27,9 @@ public class TestPage extends AemAuthorPage<TestPage> {
 public void setUrl(String url) {
 	this.url = url;
 }
-@Named("test page entry")
+@Inject
+@Named("name")
+
 public String getTitle() {
     return title;
   }
