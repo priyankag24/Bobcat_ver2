@@ -14,13 +14,20 @@ import com.google.inject.Inject;
 @PageObject
 public class TestPage extends AemAuthorPage<TestPage> {
 	
-  @Inject
+   @Inject
   private BobcatWait bobcatWait;
 
- // private String title = "Home Page";
-  private String title = "/content/etap/en/homepage/laboffering.html";
+  private String title = "Home Page";
+  private String url ;
+  
 
-  public String getTitle() {
+  
+
+public void setUrl(String url) {
+	this.url = url;
+}
+
+public String getTitle() {
     return title;
   }
 
@@ -36,11 +43,11 @@ public class TestPage extends AemAuthorPage<TestPage> {
     return bobcatWait.isConditionMet(ExpectedConditions.titleContains("404 Resource"));
   }
 
-public String getFullUrl(String title) {
+public String getFullUrl(String url) {
 	
-	    return title;
+	    return url;
 	  }
-	// TODO Auto-generated method stub
+	
 	
 }
 
