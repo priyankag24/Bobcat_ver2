@@ -26,7 +26,7 @@ public class TestPage extends AemAuthorPage<TestPage> {
 public void setUrl(String url) {
 	this.url = url;
 }
-
+@Named("test page entry")
 public String getTitle() {
     return title;
   }
