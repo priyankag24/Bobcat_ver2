@@ -2,6 +2,8 @@ package test.bobcat.pages;
 
 import java.util.function.BooleanSupplier;
 
+import java.util.logging.Logger;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.cognifide.qa.bb.aem.core.pages.AemAuthorPage;
@@ -14,7 +16,7 @@ import com.google.inject.name.Named;
 
 @PageObject
 public class TestPage extends AemAuthorPage<TestPage> {
-	
+   Logger log= Logger.getAnonymousLogger();	
    @Inject
   private BobcatWait bobcatWait;
 
@@ -29,7 +31,7 @@ public void setUrl(String url) {
 }
 
 public String getTitle() {
-    System.out.println("Test Page Entry");	
+  log.info("Test Page entry");
     return title;
   }
 
