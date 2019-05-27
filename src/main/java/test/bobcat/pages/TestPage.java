@@ -1,5 +1,7 @@
 package test.bobcat.pages;
 
+import java.util.function.BooleanSupplier;
+
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.cognifide.qa.bb.aem.core.pages.AemAuthorPage;
@@ -7,13 +9,16 @@ import com.cognifide.qa.bb.qualifier.PageObject;
 import com.cognifide.qa.bb.wait.BobcatWait;
 import com.google.inject.Inject;
 
+
+
 @PageObject
 public class TestPage extends AemAuthorPage<TestPage> {
-
+	
   @Inject
   private BobcatWait bobcatWait;
 
-  private String title = "Home Page";
+ // private String title = "Home Page";
+  private String title = "/content/etap/en/homepage/laboffering.html";
 
   public String getTitle() {
     return title;
@@ -30,4 +35,12 @@ public class TestPage extends AemAuthorPage<TestPage> {
   public boolean isNotAvailable() {
     return bobcatWait.isConditionMet(ExpectedConditions.titleContains("404 Resource"));
   }
+
+public String getFullUrl(String title) {
+	
+	    return title;
+	  }
+	// TODO Auto-generated method stub
+	
 }
+
