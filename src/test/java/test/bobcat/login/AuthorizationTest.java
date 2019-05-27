@@ -45,6 +45,11 @@ public class AuthorizationTest {
 		controller.execute(AemActions.LOG_IN);
 		assertTrue(testpage.open().isDisplayed());
 		
+		//content/etap/en/homepage/laboffering.html
+		testpage.setUrl("/content/etap/en/homepage/laboffering.html");
+		assertTrue(testpage.open().isDisplayed());
+		
+		
 	}
 
 }
