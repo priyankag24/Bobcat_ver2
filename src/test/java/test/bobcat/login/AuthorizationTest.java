@@ -46,8 +46,8 @@ public class AuthorizationTest {
 		assertTrue(testpage.open().isDisplayed());
 		
 		//content/etap/en/homepage/laboffering.html
-		testpage.setUrl("/content/etap/en/homepage/laboffering.html");
-		assertTrue(testpage.open().isDisplayed());
+		//testpage.setUrl("/content/etap/en/homepage/laboffering.html");
+		//assertTrue(testpage.open().isDisplayed());
 		
 		
 	}
