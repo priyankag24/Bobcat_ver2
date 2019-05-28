@@ -15,7 +15,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
-
+import test.bobcat.pages.CreateNewPage;
 import test.bobcat.pages.TestPage;
 
 /**
@@ -40,14 +40,14 @@ public class AuthorizationTest {
 		//TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
                // controller.execute(AemActions.LOG_IN);
 		//assertTrue(testpage.open().isDisplayed());
-		TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
-		//TestPage testpage = bobcatPageFactory.create("/aem/start.html", TestPage.class);
-		controller.execute(AemActions.LOG_IN);
-		assertTrue(testpage.open().isDisplayed());
-		
-		//content/etap/en/homepage/laboffering.html
-		//testpage.setUrl("/content/etap/en/homepage/laboffering.html");
+		//TestPage testpage = bobcatPageFactory.create("/content/etap/en/homepage.html", TestPage.class);
+		//controller.execute(AemActions.LOG_IN);
 		//assertTrue(testpage.open().isDisplayed());
+		
+		CreateNewPage createpage = bobcatPageFactory.create("/mnt/overlay/wcm/core/content/sites/createpagewizard.html/content/etap/loginpage", CreateNewPage.class);
+		controller.execute(AemActions.LOG_IN);
+		
+	
 		
 		
 	}
