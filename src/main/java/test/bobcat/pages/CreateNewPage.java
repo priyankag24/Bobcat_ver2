@@ -27,7 +27,7 @@ import com.cognifide.qa.bb.page.BobcatPageFactory;
 import com.cognifide.qa.bb.aem.ui.wcm.SiteAdminPage;
 
 
-public class CreateNewPage {
+public class CreateNewPage extends AemAuthorPage<CreateNewPage>  {
 	
 	 private static final String CREATE_PAGE_TEMPLATE = "login";
 
