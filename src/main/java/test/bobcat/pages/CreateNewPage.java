@@ -41,11 +41,11 @@ public class CreateNewPage {
 	  @Inject
 	  private AemLogin aemLogin;
 	  
-	  @Before
-	  public void openSiteadminPage() {
+	  //@Before
+	  /*public void openSiteadminPage() {
 	    aemLogin.authorLogin();
 	    page.open(BASE_PARENT_URL);
-	  }
+	  }*/
 	  
 	  @Test
 	  public void createPage() {
