@@ -46,12 +46,6 @@ public String getTitle() {
   public boolean isNotAvailable() {
     return bobcatWait.isConditionMet(ExpectedConditions.titleContains("404 Resource"));
   }
-
-public String getFullUrl(String url) {
-	System.out.println("Lab Offering");
-	    return url;
-	  }
-	
-	
+		
 }
 
