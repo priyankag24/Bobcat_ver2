@@ -35,8 +35,8 @@ public String getTitle() {
   }
 
   public void setTitle(String title) {
-    this.title = title;
     log.info("Test Page entry");
+    this.title = title;
   }
 
   public boolean isDisplayed() {
