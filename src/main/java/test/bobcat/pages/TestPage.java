@@ -31,8 +31,8 @@ public void setUrl(String url) {
 }
 
 public String getTitle() {
-    return title;
-    log.info("Test Page entry");  
+    log.info("Test Page entry"); 
+    return title; 
   }
 
   public void setTitle(String title) {
